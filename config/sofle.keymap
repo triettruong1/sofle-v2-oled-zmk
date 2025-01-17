@@ -29,8 +29,8 @@
 
     &mt {
       flavor="tap-preferred";
-      quick-tap-ms = <150>;
-      tapping-term-ms = <250>;
+      quick-tap-ms = 150;
+      tapping-term-ms = 250;
     };
 
     keymap {
