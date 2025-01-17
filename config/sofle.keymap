@@ -27,12 +27,13 @@
         };
     };
 
-    keymap {
+    keymap 
         compatible = "zmk,keymap";
 
         default_layer {
             label = "default";
             display-name = "QWERTY";
+            flavor="tap-preferred"
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -67,8 +68,8 @@
             bindings = <
                   &kp GRAVE   &trans     &trans     &trans       &trans    &trans                       &trans     &kp N7    &kp N8        &kp N9   &trans  &trans
                   &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N4    &kp N5        &kp N6   &kp N0  &kp EQUAL
-                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N1    &kp N2        &kp N3   &trans  &kp PIPE
-                  &trans     &trans     &trans     &trans       &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &trans        &trans   &trans  &trans
+                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N1    &kp N2        &kp N3   &trans  &kp SQT
+                  &trans     &trans     &trans     &trans       &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &trans        &trans   &trans  &kp PIPE
                                         &trans     &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
