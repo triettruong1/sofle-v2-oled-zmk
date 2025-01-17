@@ -42,11 +42,11 @@
             //               | GUI | ALT  | LOWER | CTRL |  ALT |  | SPACE | CTRL | RAISE  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                              &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BSPC
-&kp ESC    &kp Q    &kp W     &kp E     &kp R      &kp T                               &kp Y      &kp U      &kp I      &kp O     &kp P     &kp RET
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &mt LGUI G                               &mt RGUI H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHIFT          &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &none      &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &mo LOWER  &kp LCTRL  &kp LALT       &kp SPACE  &kp RCTRL  &mo RAISE  &kp RALT   &kp RGUI
+                &kp ESC    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                               &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
+                &kp TAB    &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+                &kp LSHIFT &kp A   &kp S     &kp D     &kp F      &mt LGUI G                           &mt RGUI H &kp J      &kp K      &kp L     &kp SEMI  &kp RET
+                &trans     &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE     &none      &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                                   &kp LGUI  &kp LALT  &mo LOWER  &kp LCTRL  &kp LALT       &kp SPACE  &kp RCTRL  &mo RAISE  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -58,18 +58,18 @@
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |   7   |   8   |   9  |       |       |
-            // |   `   |     |     |      |      |      |                   |      |   4   |   5   |   6  |   0   |       |
+            // |   `   |     |     |      |      |      |                   |      |   7   |   8   |   9  |       |       |
+            // |       |     |     |      |      |      |                   |      |   4   |   5   |   6  |   0   |       |
             // |       |     |     |      |      |      |                   |      |   1   |   2   |   3  |       |       |
             // |       |     |     |      |  {   |  }   |        |  |       |  [   |  ]    |       |      |       |       |
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N7    &kp N8        &kp N9   &trans  &kp MINUS
-&kp GRAVE  &trans     &trans     &trans       &trans    &trans                       &trans     &kp N4    &kp N5        &kp N6   &kp N0  &kp EQUAL
-&trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N1    &kp N2        &kp N3   &trans  &kp PIPE
-&trans     &trans     &trans     &trans       &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &trans        &trans   &trans  &trans
-                      &trans     &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
+                  &kp GRAVE   &trans     &trans     &trans       &trans    &trans                       &trans     &kp N7    &kp N8        &kp N9   &trans  &trans
+                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N4    &kp N5        &kp N6   &kp N0  &kp EQUAL
+                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N1    &kp N2        &kp N3   &trans  &kp PIPE
+                  &trans     &trans     &trans     &trans       &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &trans        &trans   &trans  &trans
+                                        &trans     &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -86,11 +86,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &trans     &trans    &kp UP    &trans     &kp N0   &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
+                &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
+                &trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &trans     &trans    &kp UP    &trans     &kp N0   &trans
+                &trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp DEL  &kp BSPC
+                &trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
+                            &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -106,11 +106,11 @@
 
             label = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
-                                    &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+                  &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
+                  &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
+                  &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
+                  &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
+                                                      &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
             >;
         };
     };
