@@ -31,7 +31,7 @@
     keymap {
         compatible = "zmk,keymap";
         flavor="tap-preferred";
-        quick-tap-ms = <150>;
+        quick-tap-ms = <90>;
         tapping-term-ms = <250>;
 
         default_layer {
