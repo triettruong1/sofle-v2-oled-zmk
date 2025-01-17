@@ -27,13 +27,10 @@
         };
     };
 
-    &mt {
-        tapping-term-ms = <400>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
+        tapping-term-ms = <400>;
         default_layer {
             label = "default";
             display-name = "QWERTY";
