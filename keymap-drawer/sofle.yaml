@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
   QWERTY:
-  - '`'
+  - ESC
   - '1'
   - '2'
   - '3'
@@ -12,8 +12,8 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
-  - ESC
+  - '-'
+  - TAB
   - Q
   - W
   - E
@@ -24,8 +24,8 @@ layers:
   - I
   - O
   - P
-  - RET
-  - TAB
+  - BSPC
+  - LSHIFT
   - A
   - S
   - D
@@ -36,8 +36,8 @@ layers:
   - K
   - L
   - ;
-  - ''''
-  - LSHIFT
+  - RET
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -62,7 +62,7 @@ layers:
   - RALT
   - RGUI
   '!@#$':
-  - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -73,8 +73,8 @@ layers:
   - '8'
   - '9'
   - {t: ▽, type: trans}
-  - '-'
-  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
