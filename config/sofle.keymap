@@ -27,12 +27,15 @@
         };
     };
 
-    keymap 
+    &mt {
+      flavor="tap-preferred";
+      quick-tap-ms = <150>;
+      tapping-term-ms = <250>;
+    };
+
+    keymap {
         compatible = "zmk,keymap";
 
-        &mt {
-          flavor="tap-preferred";
-        };
 
         default_layer {
             label = "default";
