@@ -30,10 +30,13 @@
     keymap 
         compatible = "zmk,keymap";
 
+        &mt {
+          flavor="tap-preferred";
+        };
+
         default_layer {
             label = "default";
             display-name = "QWERTY";
-            flavor="tap-preferred";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
