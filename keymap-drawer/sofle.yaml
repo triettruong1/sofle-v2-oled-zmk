@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
+  - BSPC
   - ESC
   - Q
   - W
@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - P
-  - BSPC
+  - RET
   - TAB
   - A
   - S
@@ -73,7 +73,7 @@ layers:
   - '8'
   - '9'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
   - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,7 +85,7 @@ layers:
   - '5'
   - '6'
   - '0'
-  - {t: ▽, type: trans}
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -97,7 +97,7 @@ layers:
   - '2'
   - '3'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
