@@ -28,7 +28,7 @@
     };
 
     behaviors {
-      mt: mod_tap {
+      &mt {
         compatible = "zmk,behavior-mod-morph";
         label = "Mod-Tap";
         flavor = "tap-preferred";
