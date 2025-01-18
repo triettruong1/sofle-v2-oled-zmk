@@ -35,7 +35,7 @@
         quick-tap-ms = <50>;
         tapping-term-ms = <280>;
       }
-    }
+    };
 
 
     keymap {
