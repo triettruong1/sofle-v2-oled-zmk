@@ -15,6 +15,12 @@
 #define RAISE 2
 #define ADJUST 3
 
+&mt {
+        flavor = "tap-preferred";
+        quick-tap-ms = <50>;
+        tapping-term-ms = <280>;
+}
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -26,17 +32,6 @@
             then-layer = <ADJUST>;
         };
     };
-
-    behaviors {
-      &mt {
-        compatible = "zmk,behavior-mod-morph";
-        label = "Mod-Tap";
-        flavor = "tap-preferred";
-        quick-tap-ms = <50>;
-        tapping-term-ms = <280>;
-      };
-    };
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -70,16 +65,16 @@
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |     |     |      |      |      |                   |      |   7   |   8   |   9  |       |       |
-            // |       |     |     |      |      |      |                   |      |   4   |   5   |   6  |   0   |       |
-            // |       |     |     |      |      |      |                   |      |   1   |   2   |   3  |       |       |
-            // |       |     |     |      |  {   |  }   |        |  |       |  [   |  ]    |       |      |       |       |
+            // |       |     |     |      |      |      |                   |      |   4   |   5   |   6  |   0   |   =   |
+            // |       |     |     |      |      |      |                   |      |   1   |   2   |   3  |       |   '   |
+            // |       |     |     |      |  {   |  }   |        |  |       |  [   |  ]    |       |      |       |   r   |
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
                   &kp GRAVE   &trans     &trans     &trans       &trans    &trans                       &trans     &kp N7    &kp N8        &kp N9   &trans  &trans
-                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N4    &kp N5        &kp N6   &kp N0  &kp EQUAL
-                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N1    &kp N2        &kp N3   &trans  &kp SQT
-                  &trans     &trans     &trans     &trans       &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &trans        &trans   &trans  &kp PIPE
+                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N4    &kp N5        &p N6     &kp N0  &kp EQUAL
+                  &trans     &trans     &trans     &trans       &trans    &trans                       &trans     &kp N1    &kp N2        &kp N3    &trans   &kp SQT
+                  &trans     &trans     &trans     &trans       &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp LPAR      &kp RPAR    &trans   &kp PIPE
                                         &trans     &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
