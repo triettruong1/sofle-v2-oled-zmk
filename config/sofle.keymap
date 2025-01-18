@@ -32,6 +32,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "homerow_mods";
         flavor = "tap-preferred";
+        #binding-cells = <2>;
         quick-tap-ms = <50>;
         tapping-term-ms = <280>;
         global-quick-tap;
