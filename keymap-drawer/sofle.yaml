@@ -51,16 +51,16 @@ layers:
   - .
   - /
   - RSHIFT
-  - LGUI
-  - LALT
+  - ''
+  - ''
   - '!@#$'
   - LCTRL
   - LALT
   - SPACE
   - RCTRL
-  - raise
-  - RALT
-  - RGUI
+  - Navi
+  - Sft+LALT
+  - ''
   '!@#$':
   - '`'
   - {t: ▽, type: trans}
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  Navi:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
