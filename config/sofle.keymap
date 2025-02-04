@@ -34,7 +34,7 @@
         flavor = "tap-preferred";
         #binding-cells = <2>;
         quick-tap-ms = <50>;
-        tapping-term-ms = <280>;
+        tapping-term-ms = <200>;
         global-quick-tap;
         bindings = <&kp>, <&kp>; 
       };
@@ -48,9 +48,9 @@
             display-name = "QWERTY";
 
             // ------------------------------------------------------------------------------------------------------------
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
             // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   | ENTER   |
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
             //               | GUI | ALT  | LOWER | CTRL |  ALT |  | SPACE | CTRL | RAISE  | ALT   | GUI  |
 
@@ -59,7 +59,7 @@
                 &kp TAB    &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
                 &kp LSHIFT &kp A   &kp S     &kp D     &kp F      &hm LGUI G                           &hm RGUI H &kp J      &kp K      &kp L     &kp SEMI  &kp RET
                 &trans     &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE     &none      &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
-                                   &kp LGUI  &kp LALT  &mo LOWER  &kp LCTRL  &kp LALT       &kp SPACE  &kp RCTRL  &mo RAISE  &kp RALT   &kp RGUI
+                                   &none     &none     &mo LOWER  &kp LCTRL  &kp LALT       &kp SPACE  &kp RCTRL  &mo RAISE  &kp LS(LALT)  &none 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -74,7 +74,7 @@
             // |   `   |     |     |      |      |      |                   |      |   7   |   8   |   9  |       |       |
             // |       |     |     |      |      |      |                   |      |   4   |   5   |   6  |   0   |   =   |
             // |       |     |     |      |      |      |                   |      |   1   |   2   |   3  |       |   '   |
-            // |       |     |     |      |  {   |  }   |        |  |       |  [   |  ]    |       |      |       |   r   |
+            // |       |     |     |      |  {   |  }   |        |  |       |  [   |  ]    |   (   |   )  |       |   |   |
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
@@ -90,6 +90,7 @@
 
         raise_layer {
             label = "raise";
+            display-name = "Navi"
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
