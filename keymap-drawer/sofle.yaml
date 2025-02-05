@@ -141,10 +141,10 @@ layers:
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
   - UP
-  - {t: ▽, type: trans}
+  - RIGHT
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -153,10 +153,10 @@ layers:
   - LSHFT
   - {t: ▽, type: trans}
   - CLCK
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - H
+  - J
+  - K
+  - L
   - DEL
   - BSPC
   - {t: ▽, type: trans}
