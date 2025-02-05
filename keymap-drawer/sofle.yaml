@@ -16,37 +16,37 @@ layers:
   - TAB
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
   - BSPC
   - LSHIFT
   - A
+  - R
   - S
-  - D
-  - F
+  - T
   - {t: G, h: LGUI}
-  - {t: H, h: RGUI}
-  - J
-  - K
-  - L
-  - ;
+  - {t: M, h: RGUI}
+  - N
+  - E
+  - I
+  - O
   - RET
   - {t: ▽, type: trans}
-  - Z
   - X
   - C
+  - D
   - V
-  - B
+  - Z
   - MUTE
   - ''
-  - N
-  - M
+  - K
+  - H
   - ','
   - .
   - /
