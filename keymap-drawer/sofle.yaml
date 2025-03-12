@@ -162,8 +162,8 @@ layers:
   - {t: ▽, type: trans}
   - UNDO
   - CUT
-  - LGUI(C)
-  - LGUI(V)
+  - Gui+C
+  - Gui+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
