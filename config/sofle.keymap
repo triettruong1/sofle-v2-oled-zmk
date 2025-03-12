@@ -103,7 +103,7 @@
                 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
                 &trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &trans   &trans
                 &trans      &kp LALT      &kp LCTRL     &kp LSHFT     &kp LGUI      &trans                        &kp H      &kp J     &kp K     &kp L      &kp DEL  &kp BSPC
-                &trans      &kp K_UNDO    &kp K_CUT     &kp LGUI(C)    &kp LGUI(V)   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
+                &trans      &kp K_UNDO    &kp K_CUT     &kp LG(C)    &kp LG(V)   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
                             &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
