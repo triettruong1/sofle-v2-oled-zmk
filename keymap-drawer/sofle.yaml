@@ -162,8 +162,8 @@ layers:
   - {t: ▽, type: trans}
   - UNDO
   - CUT
-  - COPY
-  - PASTE
+  - LGUI(C)
+  - LGUI(V)
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
