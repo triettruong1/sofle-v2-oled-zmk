@@ -26,15 +26,15 @@ layers:
   - ;
   - BSPC
   - LSHIFT
-  - A
-  - R
-  - S
+  - {t: A, h: LSHIFT}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
   - T
   - {t: G, h: LGUI}
   - {t: M, h: RGUI}
-  - N
-  - E
-  - I
+  - {t: N, h: RCTRL}
+  - {t: E, h: RALT}
+  - {t: I, h: RSHIFT}
   - O
   - RET
   - {t: ▽, type: trans}
@@ -148,9 +148,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LSHIFT
   - LALT
   - LCTRL
-  - LSHFT
   - LGUI
   - {t: ▽, type: trans}
   - H
