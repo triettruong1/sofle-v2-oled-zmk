@@ -55,11 +55,11 @@
             //               | GUI | ALT  | LOWER | CTRL |  ALT |  | SPACE | CTRL | RAISE  | ALT   | GUI  |
 
             bindings = <
-                &kp ESC    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                               &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
-                &kp TAB    &kp Q   &kp W     &kp F     &kp P      &kp B                                &kp J      &kp L      &kp U      &kp Y     &kp SEMI     &kp BSPC
-                &kp LSHIFT &kp A   &kp R     &kp S     &kp T      &hm LGUI G                           &hm RGUI M &kp N      &kp E      &kp I     &kp O  &kp RET
-                &trans     &kp X   &kp C     &kp D     &kp V      &kp Z      &kp C_MUTE     &none      &kp K      &kp H      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
-                                   &none     &none     &mo LOWER  &kp LCTRL  &kp LALT       &kp SPACE  &kp RCTRL  &mo RAISE  &kp LS(LALT)  &none 
+                &kp ESC    &kp N1         &kp N2       &kp N3       &kp N4     &kp N5                               &kp N6     &kp N7       &kp N8        &kp N9    &kp N0    &kp MINUS
+                &kp TAB    &kp Q          &kp W        &kp F        &kp P      &kp B                                &kp J      &kp L        &kp U         &kp Y     &kp SEMI     &kp BSPC
+                &kp LSHIFT &hm LSHIFT A   &hm LALT R   &hm LCTRL S  &kp T      &hm LGUI G                           &hm RGUI M &hm RCTRL N  &hm RALT E    &hm RSHIFT I     &kp O  &kp RET
+                &trans     &kp X          &kp C        &kp D        &kp V      &kp Z      &kp C_MUTE     &none      &kp K      &kp H        &kp COMMA     &kp DOT   &kp FSLH  &kp RSHIFT
+                                          &none        &none        &mo LOWER  &kp LCTRL  &kp LALT       &kp SPACE  &kp RCTRL  &mo RAISE    &kp LS(LALT)  &none 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -102,7 +102,7 @@
             bindings = <
                 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
                 &trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &trans   &trans
-                &trans      &kp LALT      &kp LCTRL     &kp LSHFT     &kp LGUI      &trans                        &kp H      &kp J     &kp K     &kp L      &kp DEL  &kp BSPC
+                &trans      &kp LSHIFT    &kp LALT    &kp LCTRL     &kp LGUI      &trans                        &kp H      &kp J     &kp K     &kp L      &kp DEL  &kp BSPC
                 &trans      &kp K_UNDO    &kp K_CUT     &kp LG(C)    &kp LG(V)   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
                             &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
