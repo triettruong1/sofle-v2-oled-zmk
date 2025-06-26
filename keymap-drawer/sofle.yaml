@@ -35,7 +35,7 @@ layers:
   - {t: N, h: RGUI}
   - {t: E, h: RCTRL}
   - {t: I, h: RALT}
-  - '&hm RSHIFTO'
+  - {t: O, h: RSHIFT}
   - RET
   - {t: ▽, type: trans}
   - X
