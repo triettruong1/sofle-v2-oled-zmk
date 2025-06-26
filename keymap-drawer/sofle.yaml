@@ -29,13 +29,13 @@ layers:
   - {t: A, h: LSHIFT}
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
-  - T
-  - {t: G, h: LGUI}
-  - {t: M, h: RGUI}
-  - {t: N, h: RCTRL}
-  - {t: E, h: RALT}
-  - {t: I, h: RSHIFT}
-  - O
+  - {t: T, h: LGUI}
+  - G
+  - M
+  - {t: N, h: RGUI}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - '&hm RSHIFTO'
   - RET
   - {t: ▽, type: trans}
   - X
