@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  QWERTY:
+  Colemak:
   - ESC
   - '1'
   - '2'
@@ -43,7 +43,7 @@ layers:
   - D
   - V
   - Z
-  - MUTE
+  - ''
   - ''
   - K
   - H
@@ -51,16 +51,16 @@ layers:
   - .
   - /
   - RSHIFT
-  - ''
-  - ''
+  - MUTE
+  - '&caps_word'
   - '!@#$'
-  - LCTRL
-  - LALT
+  - BSPC
+  - TAB
+  - RET
   - SPACE
-  - RCTRL
   - Navi
-  - Sft+LALT
-  - ''
+  - ESC
+  - Meh+LGUI
   '!@#$':
   - '`'
   - {t: ▽, type: trans}
@@ -244,3 +244,6 @@ layers:
   - {type: held}
   - ''
   - ''
+combos:
+- p: [32, 33]
+  k: ESC
