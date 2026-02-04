@@ -33,10 +33,10 @@
     combos {
         compatible = "zmk,combos";
 
-        // JK combo for ESC - great for Vim
+        // JK combo for ESC - great for Vim (N and E on Colemak = J and K positions)
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <32 33>; // J and K positions on Colemak (N and E keys)
+            key-positions = <31 32>; // N and E keys on right home row
             bindings = <&kp ESC>;
         };
     };
