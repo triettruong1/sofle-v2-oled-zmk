@@ -15,6 +15,9 @@
 #define RAISE 2
 #define ADJUST 3
 
+// Hyper key (Ctrl+Shift+Alt+Gui) - useful for Aerospace
+#define HYPER LC(LS(LA(LGUI)))
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -27,6 +30,17 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        // JK combo for ESC - great for Vim
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <32 33>; // J and K positions on Colemak (N and E keys)
+            bindings = <&kp ESC>;
+        };
+    };
+
     behaviors {
       hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -36,7 +50,14 @@
         quick-tap-ms = <50>;
         tapping-term-ms = <200>;
         global-quick-tap;
-        bindings = <&kp>, <&kp>; 
+        bindings = <&kp>, <&kp>;
+      };
+
+      // Caps word - tap to activate, types in CAPS until space/punctuation
+      caps_word: caps_word {
+        compatible = "zmk,behavior-caps-word";
+        #binding-cells = <0>;
+        continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
       };
     };
 
@@ -45,7 +66,7 @@
 
         default_layer {
             label = "default";
-            display-name = "QWERTY";
+            display-name = "Colemak";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
@@ -58,8 +79,8 @@
                 &kp ESC    &kp N1         &kp N2       &kp N3       &kp N4     &kp N5                               &kp N6     &kp N7       &kp N8        &kp N9      &kp N0    &kp MINUS
                 &kp TAB    &kp Q          &kp W        &kp F        &kp P      &kp B                                &kp J      &kp L        &kp U         &kp Y       &kp SEMI     &kp BSPC
                 &kp LSHIFT &hm LSHIFT A   &hm LALT R   &hm LCTRL S  &hm LGUI T &kp G                                &kp M      &hm RGUI N   &hm RCTRL E   &hm RALT I  &hm RSHIFT O  &kp RET
-                &trans     &kp X          &kp C        &kp D        &kp V      &kp Z      &kp C_MUTE     &none      &kp K      &kp H        &kp COMMA     &kp DOT     &kp FSLH  &kp RSHIFT
-                                          &none        &none        &mo LOWER  &kp LCTRL  &kp LALT       &kp SPACE  &kp RCTRL  &mo RAISE    &kp LS(LALT)  &none 
+                &trans     &kp X          &kp C        &kp D        &kp V      &kp Z      &none          &none      &kp K      &kp H        &kp COMMA     &kp DOT     &kp FSLH  &kp RSHIFT
+                                          &kp C_MUTE   &caps_word   &mo LOWER  &kp BSPC   &kp TAB        &kp RET    &kp SPACE  &mo RAISE    &kp ESC       &kp HYPER 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
