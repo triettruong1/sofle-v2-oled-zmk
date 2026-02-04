@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - '-'
-  - TAB
+  - '`'
   - Q
   - W
   - F
@@ -24,8 +24,8 @@ layers:
   - U
   - Y
   - ;
-  - BSPC
-  - LSHIFT
+  - ''''
+  - '-'
   - {t: A, h: LSHIFT}
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
@@ -36,7 +36,7 @@ layers:
   - {t: E, h: RCTRL}
   - {t: I, h: RALT}
   - {t: O, h: RSHIFT}
-  - RET
+  - '='
   - {t: ▽, type: trans}
   - X
   - C
@@ -62,7 +62,7 @@ layers:
   - ESC
   - Meh+LGUI
   '!@#$':
-  - '`'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -75,41 +75,41 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - '{'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '4'
   - '5'
   - '6'
   - '0'
-  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
+  - <
+  - '>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
   - {t: ▽, type: trans}
-  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '{'
-  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - (
-  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - \
   - {t: ▽, type: trans}
@@ -136,10 +136,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -148,17 +148,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LSHIFT
-  - LALT
-  - LCTRL
-  - LGUI
+  - F5
+  - F6
+  - F7
+  - F8
   - {t: ▽, type: trans}
   - H
   - J
   - K
   - L
-  - DEL
-  - BSPC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UNDO
   - CUT
@@ -167,10 +167,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
